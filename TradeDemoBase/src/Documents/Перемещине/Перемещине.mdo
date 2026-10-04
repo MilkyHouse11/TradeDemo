@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92593ac3-e61c-4ecc-bb2c-5b3fece43d27">
+  <producedTypes>
+    <objectType typeId="0c9d187d-1166-4317-95d7-e4757bf43005" valueTypeId="ae315ebf-f508-4ab0-925c-a59252f43c4b"/>
+    <refType typeId="2bbf475d-00d2-4b03-a41f-b5716a808585" valueTypeId="1f9a1acb-80a2-47a1-88c7-0298c9a0987c"/>
+    <selectionType typeId="c79b1378-38b9-40b8-9073-aa54a23b8a6e" valueTypeId="ed05e048-6d80-4f29-ac93-84482227191b"/>
+    <listType typeId="a8525295-87d5-4fef-976c-201a36791901" valueTypeId="3151a1e4-3cf3-45e8-824b-a034990c2b65"/>
+    <managerType typeId="0d479cbe-15f9-4a91-b3e3-1511a6839ab8" valueTypeId="9ca6c057-3195-40ce-9a4f-829efce148b2"/>
+  </producedTypes>
+  <name>Перемещине</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перемещине</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Перемещине.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Перемещине.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="f142f92e-fdcc-4362-b9c4-8a6943847ec7">
+    <name>СкладОткуда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад откуда</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склад</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="87dc4f2c-5a65-4e32-a2b6-3198000eebe5">
+    <name>СкладКуда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад куда</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склад</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4e35bcda-9d8c-4941-87ab-52afc217c3b7">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="16916fc8-b92c-4847-8db4-625fd957843c">
+    <producedTypes>
+      <objectType typeId="8e6a9db8-2b4c-4387-9681-8ce490f813fb" valueTypeId="2e5d7184-6c7f-4507-961b-cc7ad45f5976"/>
+      <rowType typeId="d8ccafbe-bc0b-457d-afef-69ac172ec785" valueTypeId="224a45eb-b8e1-4ec1-9948-6f724eae3190"/>
+    </producedTypes>
+    <name>СписокТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список товаров</value>
+    </synonym>
+    <attributes uuid="982d0649-66e4-4b75-a737-e541a37ac0cd">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Товары</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d35e2c8d-be2c-477d-888a-6754cd66b4b1">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

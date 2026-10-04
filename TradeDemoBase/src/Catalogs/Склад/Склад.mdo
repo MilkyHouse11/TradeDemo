@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0d6b749-b0b0-48b4-9d38-f66171928acc">
+  <producedTypes>
+    <objectType typeId="7abc4597-4321-40ad-9961-78265bfed1b8" valueTypeId="b8bc7d64-e66f-4d38-9bd3-3058ad2be4b1"/>
+    <refType typeId="53b56d33-a704-4895-9bc9-a7225439f3ef" valueTypeId="381db111-06b4-4b1d-9847-b9c1cadd3526"/>
+    <selectionType typeId="4a5faeef-992a-4711-8acb-c92b4070b14c" valueTypeId="3aaa0f63-e30f-4c03-9385-88ec70486875"/>
+    <listType typeId="29fc9656-8059-43ca-95ee-dca657ddd214" valueTypeId="3ef4024c-65cd-40a4-a498-1052f27ab658"/>
+    <managerType typeId="baf0225f-0bb5-4486-a7f3-bbf63e6dfdb4" valueTypeId="5c258d01-9112-431e-bad9-cc3f95b709b1"/>
+  </producedTypes>
+  <name>Склад</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склад</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Склад.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Склад.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="8d557134-877b-4002-a658-0d9fd0c60c72">
+    <name>Основной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0d2d2d9-d2d3-4be7-b2e6-2a3e467e4ecc">
+    <name>Розничный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Розничный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
